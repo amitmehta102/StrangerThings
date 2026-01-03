@@ -20,8 +20,6 @@
 <section class="hero">
   <h1 class="neon-text">WELCOME TO HAWKINS</h1>
   <p class="tagline">Mystery • Friendship • The Upside Down</p>
-
-  <!-- ADDED ONLY -->
   <button class="explore-btn" onclick="scrollToExplore()">Explore</button>
 </section>
 
@@ -41,7 +39,6 @@
 
 <section id="characters" class="slider-section">
   <h2 class="neon-sub center">Main Characters</h2>
-
   <div class="slider-wrapper" id="sliderWrapper">
     <div class="slider" id="slider">
       <div class="card"><img src="eleven.jpg"><h3>Eleven</h3></div>
@@ -55,26 +52,35 @@
   </div>
 </section>
 
+<!-- GALLERY -->
 <section id="gallery" class="gallery-section">
   <h2 class="neon-sub center">Gallery</h2>
+  <p class="gallery-desc">
+    A visual collection of characters and creatures from Hawkins.
+  </p>
 
   <div class="gallery">
-    <img src="eleven.jpg">
-    <img src="mike.jpg">
-    <img src="dustin.jpg">
-    <img src="lucas.jpg">
-    <img src="will.jpg">
-    <img src="max.jpg">
-    <img src="vecna.jpg">
-    <img src="hopper.jpg">
-    <img src="joyce.jpg">
-    <img src="steve.jpg">
-    <img src="nancy.jpg">
-    <img src="robin.jpg">
-    <img src="eddie.jpg">
-    <img src="demogorgon.jpg">
+    <div class="gallery-item"><img src="eleven.jpg"><span>Eleven</span></div>
+    <div class="gallery-item"><img src="mike.jpg"><span>Mike Wheeler</span></div>
+    <div class="gallery-item"><img src="dustin.jpg"><span>Dustin Henderson</span></div>
+    <div class="gallery-item"><img src="lucas.jpg"><span>Lucas Sinclair</span></div>
+    <div class="gallery-item"><img src="will.jpg"><span>Will Byers</span></div>
+    <div class="gallery-item"><img src="max.jpg"><span>Max Mayfield</span></div>
+    <div class="gallery-item"><img src="vecna.jpg"><span>Vecna</span></div>
+    <div class="gallery-item"><img src="hopper.jpg"><span>Jim Hopper</span></div>
+    <div class="gallery-item"><img src="joyce.jpg"><span>Joyce Byers</span></div>
+    <div class="gallery-item"><img src="steve.jpg"><span>Steve Harrington</span></div>
+    <div class="gallery-item"><img src="nancy.jpg"><span>Nancy Wheeler</span></div>
+    <div class="gallery-item"><img src="robin.jpg"><span>Robin Buckley</span></div>
+    <div class="gallery-item"><img src="eddie.jpg"><span>Eddie Munson</span></div>
+    <div class="gallery-item"><img src="demogorgon.jpg"><span>Demogorgon</span></div>
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
 
 <footer>
   <p>© 2026 | Stranger Things Fan Project</p>
