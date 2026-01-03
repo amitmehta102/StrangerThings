@@ -10,6 +10,7 @@ body {
     color: #f8fafc;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,15 +24,21 @@ header img {
 }
 
 nav a {
-    color: #f8fafc;
     margin-left: 20px;
+    color: #f8fafc;
     text-decoration: none;
 }
 
+nav a:hover {
+    color: crimson;
+}
+
+/* Hero */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                url("assets/images/bg.jpg") center/cover;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("bg.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,19 +48,29 @@ nav a {
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #e5e7eb;
 }
 
 .hero button {
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 12px 26px;
     background: crimson;
-    color: white;
     border: none;
+    color: white;
+    font-size: 15px;
     border-radius: 6px;
     cursor: pointer;
 }
 
+.hero button:hover {
+    background: darkred;
+}
+
+/* Sections */
 section {
     padding: 60px 10%;
     text-align: center;
@@ -88,9 +105,10 @@ section {
     border-radius: 12px;
 }
 
+/* Footer */
 footer {
-    padding: 20px;
     background: black;
+    padding: 20px;
     text-align: center;
     color: #94a3b8;
 }
