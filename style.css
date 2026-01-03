@@ -23,21 +23,37 @@ header img {
     height: 50px;
 }
 
-nav a {
-    margin-left: 20px;
-    color: #f8fafc;
-    text-decoration: none;
+/* Neon text */
+.neon-text {
+    font-size: 3.2rem;
+    color: crimson;
+    text-shadow:
+        0 0 5px crimson,
+        0 0 10px crimson,
+        0 0 20px red;
+    animation: flicker 2.5s infinite;
 }
 
-nav a:hover {
+.neon-sub {
     color: crimson;
+    text-shadow: 0 0 10px red;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+    }
 }
 
 /* Hero */
 .hero {
     height: 80vh;
     background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
         url("bg.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -46,22 +62,12 @@ nav a:hover {
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    margin-top: 10px;
-    color: #e5e7eb;
-}
-
 .hero button {
     margin-top: 20px;
     padding: 12px 26px;
     background: crimson;
     border: none;
     color: white;
-    font-size: 15px;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -76,6 +82,7 @@ section {
     text-align: center;
 }
 
+/* Cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -87,6 +94,7 @@ section {
     background: #0f172a;
     padding: 15px;
     border-radius: 12px;
+    transition: 0.3s;
 }
 
 .card img {
@@ -94,21 +102,30 @@ section {
     border-radius: 10px;
 }
 
+.glow-card:hover {
+    box-shadow: 0 0 25px crimson;
+    transform: scale(1.05);
+}
+
+/* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-.gallery img {
-    width: 100%;
+.glow-img {
     border-radius: 12px;
+    transition: 0.3s;
+}
+
+.glow-img:hover {
+    box-shadow: 0 0 30px crimson;
 }
 
 /* Footer */
 footer {
     background: black;
     padding: 20px;
-    text-align: center;
     color: #94a3b8;
 }
